@@ -16,8 +16,8 @@ object Domino {
       case (lefts, Nil)              => lefts :+ left :+ right
       case (lefts, rights) => lefts ++ (left +: right +: rights)
     }
- 
   }
+  
  
   def insert(pairs: Seq[(Token, Token)], tokenSequence: Seq[Token]): Seq[Token] = {
     pairs match {
